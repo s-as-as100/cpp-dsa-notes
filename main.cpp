@@ -57,7 +57,7 @@ int main()
     return 0;
 }
 
-*/
+
 
 // Create a program to divide N candies to M number of students.Suppose you have to divide 18 candies among 4 students equally.How many candies will each student get if candies must be divided equally ?
 
@@ -77,6 +77,30 @@ int main()
 
     cout << "Candies per student " << candiesCentPerStudent << endl;
     cout << "Candies left " << candiesLeft << endl;
+
+    return 0;
+}
+
+*/
+
+// The task is to input a number from the user and print 1 if it's odd; otherwise, print 0.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    // cin << "hello";
+    // cout << "Hello";
+
+    cout << "Input the number : ";
+    cin >> n;
+
+    // bool result = n % 2 == = 0 ? false : true;
+    bool result = (n % 2 == 1); // if result is 1, then it is odd, else not
+
+    cout << result << endl;
 
     return 0;
 }
