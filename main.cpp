@@ -81,7 +81,7 @@ int main()
     return 0;
 }
 
-*/
+
 
 // The task is to input a number from the user and print 1 if it's odd; otherwise, print 0.
 
@@ -91,16 +91,49 @@ using namespace std;
 int main()
 {
     int n;
-    // cin << "hello";
-    // cout << "Hello";
 
     cout << "Input the number : ";
     cin >> n;
 
-    // bool result = n % 2 == = 0 ? false : true;
     bool result = (n % 2 == 1); // if result is 1, then it is odd, else not
 
     cout << result << endl;
 
     return 0;
+}
+
+
+
+Imagine we are writing a program to grade students based on their scores.We want to categorize them into four grades : A, B, C, and D, depending on their score.Here's the problem:
+
+If a student's score is 90 or above, they get an "A." If the score is between 80 and
+                                                                                                                                           89,
+they get a "B." If the score is between 70 and 79, they get a "C." If the score is between 60 and 69, they get a "D." If the score is below 60, they fail and get an "F."
+
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int studentScore = 73;
+    int gradeAScore = 90;
+
+    if (studentScore >= gradeAScore)
+    {
+        cout << "Grade A" << endl;
+    }
+
+    else if (studentScore >= 80)
+    {
+
+        cout << "Grade B" << endl;
+    }
+
+    else if (studentScore >= 70)
+    {
+        cout << "Grade c" << endl;
+    }
 }
