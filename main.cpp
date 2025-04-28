@@ -111,7 +111,7 @@ If a student's score is 90 or above, they get an "A." If the score is between 80
 they get a "B." If the score is between 70 and 79, they get a "C." If the score is between 60 and 69, they get a "D." If the score is below 60, they fail and get an "F."
 
 
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -136,4 +136,77 @@ int main()
     {
         cout << "Grade c" << endl;
     }
+}
+
+You have three distinct integer numbers : `num1, num2, and num3.Write a C++ program to determine and display
+which number is the largest, the second largest, and the smallest among the three.
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1, num2, num3;
+    cout << "enter a num1" << endl;
+    cin >> num1;
+    cout << "enter a num2" << endl;
+    cin >> num2;
+    cout << "enter a num3" << endl;
+    cin >> num3;
+
+    int largest, secondLargest, smallest;
+
+    if (num1 > num2 && num1 > num3)
+    {
+        largest = num1;
+        if (num2 > num3)
+        {
+            secondLargest = num2;
+            smallest = num3;
+        }
+        else
+        {
+            secondLargest = num3;
+            smallest = num2;
+        }
+    }
+
+    else if (num2 > num1 && num2 > num3)
+    {
+
+        largest = num2;
+
+        if (num3 > num1)
+        {
+            secondLargest = num3;
+            smallest = num1;
+        }
+        else
+        {
+            secondLargest = num1;
+            smallest = num3;
+        }
+    }
+
+    else
+    {
+        largest = num3;
+
+        if (num1 > num2)
+        {
+            secondLargest = num1;
+            smallest = num2;
+        }
+        else
+        {
+            secondLargest = num2;
+            smallest = num1;
+        }
+    }
+
+    cout << "largest no " << largest << endl;
+    cout << "Second largest no" << secondLargest << endl;
+    cout << "smallest no" << smallest << endl;
 }
