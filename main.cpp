@@ -299,7 +299,7 @@ int main()
 
  wap Factorial Calculation
 
- */
+
 
 #include <iostream>
 using namespace std;
@@ -330,3 +330,90 @@ int main()
 }
 
 // factorail 1*2= 2  , n=3  --  factorail = 1*3= 3, n =2 --- facto = 2*3=6  --  fact = 6*3 =18
+
+
+Write a program
+
+*****
+*****
+*****
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    for (int i = 0; i < 3; i++)
+    {
+
+        for (int j = 0; j < 5; j++)
+        {
+            cout << " * ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+wap
+
+*
+**
+***
+****
+*****
+******
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int noOfRows;
+
+    cout << "Enter a no of rows";
+    cin >> noOfRows;
+
+    for (int i = 0; i < noOfRows; i++)
+    {
+        for (int j = 0; i <= j; j++)
+        {
+            cout << " * ";
+        }
+
+        cout << endl;
+    }
+
+    return 0
+}
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+
+    for (int i = n; i >= 1; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+*/
