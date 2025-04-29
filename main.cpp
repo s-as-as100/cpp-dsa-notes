@@ -141,7 +141,7 @@ int main()
 You have three distinct integer numbers : `num1, num2, and num3.Write a C++ program to determine and display
 which number is the largest, the second largest, and the smallest among the three.
 
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -210,3 +210,123 @@ int main()
     cout << "Second largest no" << secondLargest << endl;
     cout << "smallest no" << smallest << endl;
 }
+
+
+// You are developing a simple program for a movie theater in India.
+//  The theater has different ticket prices based on the age of the moviegoers. Here are the pricing rules in Indian Rupees (₹):
+
+Children (age 12 and below) pay ₹100 per ticket.
+Adults (age 13 to 64) pay ₹200 per ticket.
+Seniors (age 65 and above) pay ₹150 per ticket.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    int ticketPrice;
+    cout << "Enter the age of person";
+    cin >> age;
+
+    if (age <= 12)
+    {
+        ticketPrice = 100;
+    }
+
+    else if (age >= 13 && age <= 64)
+    {
+        ticketPrice = 200;
+    }
+
+    else
+    {
+        ticketPrice = 150;
+    }
+
+    cout << "Ticket price " << ticketPrice << endl;
+
+    return 0;
+}
+
+// Print Numbers From 5 to 1 Using while Loop
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num = 5;
+
+    while (num >= 1)
+    {
+
+        cout << num << endl;
+        num--;
+    }
+
+    return 0;
+}
+
+
+// Write a program that takes two inputs(a and b) from the user and prints the numbers from a to b using while loop.
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int a, b;
+    cout << "Enter a number A";
+    cin >> a;
+    cout << "Enter a number B";
+    cin >> b;
+
+    cout << "Numbers from " << a << " to " << b << " are: ";
+
+    while (a <= b)
+    {
+        cout << a << " ";
+        a++;
+    }
+
+    return 0;
+}
+
+ wap Factorial Calculation
+
+ */
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int num;
+    int factorial = 1;
+
+    cout << "Enter a number" << endl;
+    cin >> num;
+
+    if (num < 0)
+    {
+        cout << "Please enter a positive number " << endl;
+    }
+
+    else
+    {
+        for (int i = 1; i <= num; i++)
+        {
+            factorial *= i;
+        }
+    }
+
+    cout << "Factorail of a number is " << factorial << endl;
+}
+
+// factorail 1*2= 2  , n=3  --  factorail = 1*3= 3, n =2 --- facto = 2*3=6  --  fact = 6*3 =18
