@@ -427,7 +427,7 @@ int main()
 1
 
 
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -461,6 +461,27 @@ int main()
             cout << j;
         }
         cout << endl;
+    }
+
+    return 0;
+}
+Write a C++ program to print alphabets from a to z using for loop.
+
+
+
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    cout << "Alphabets from a - z are: " << " ";
+
+    for (int i = 97; i <= 122; i++)
+    {
+
+        cout << char(i);
     }
 
     return 0;
