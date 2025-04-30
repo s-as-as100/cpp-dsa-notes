@@ -490,7 +490,6 @@ int main()
 Write a C++ program to calculate the sum of all even and odd numbers from 1 to N separately.
 
 
-*/
 
 #include <iostream>
 using namespace std;
@@ -520,6 +519,36 @@ int main()
 
     cout << "Sum of Even no" << sumOfEvenNo << endl;
     cout << "Sum of Odd no" << sumOfOddNo << endl;
+
+    return 0;
+}
+
+Write a C++ program to reverse a given number
+
+num=4321;
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int num, rev = 0;
+
+    cout << "Enter a number";
+    cin >> num;
+
+    while (num != 0)
+    {
+        rev = (rev * 10) + (num % 10);
+
+        /* Remove the last digit from 'num' */
+        num /= 10;
+    }
+
+    cout << "Reverse = " << rev;
 
     return 0;
 }
