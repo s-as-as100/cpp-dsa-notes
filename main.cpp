@@ -469,7 +469,7 @@ Write a C++ program to print alphabets from a to z using for loop.
 
 
 
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -483,6 +483,43 @@ int main()
 
         cout << char(i);
     }
+
+    return 0;
+}
+
+Write a C++ program to calculate the sum of all even and odd numbers from 1 to N separately.
+
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    int sumOfEvenNo = 0;
+    int sumOfOddNo = 0;
+
+    cout << "Enter a number" << endl;
+    cin >> num;
+
+    for (int i = 0; i <= num; i++)
+    {
+        if (i % 2 == 0)
+        {
+
+            sumOfEvenNo += i
+        }
+
+        else
+        {
+            sumOfOddNo += i
+        }
+    }
+
+    cout << "Sum of Even no" << sumOfEvenNo << endl;
+    cout << "Sum of Odd no" << sumOfOddNo << endl;
 
     return 0;
 }
