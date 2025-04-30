@@ -527,7 +527,7 @@ Write a C++ program to reverse a given number
 
 num=4321;
 
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -544,11 +544,31 @@ int main()
     {
         rev = (rev * 10) + (num % 10);
 
-        /* Remove the last digit from 'num' */
-        num /= 10;
+         num /= 10;
     }
 
     cout << "Reverse = " << rev;
+
+    return 0;
+}
+
+Print Multiplication table of a given number
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    cout << "Enter a number";
+    cin >> num;
+
+    for (int i = 1; i <= 10; i++)
+    {
+
+        cout << num << " * " << i << " = " << (num * i) << endl;
+    }
 
     return 0;
 }
