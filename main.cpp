@@ -553,7 +553,7 @@ int main()
 }
 
 Print Multiplication table of a given number
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -568,6 +568,26 @@ int main()
     {
 
         cout << num << " * " << i << " = " << (num * i) << endl;
+    }
+
+    return 0;
+}
+
+Create a program to calculate the sum of integers entered by the user until the user enters 0 or negative integer.
+
+Initialise a variable named total with value 0 at the beginning.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num, total = 0;
+
+    for (int i = 0; i < num; i++)
+    {
+        total += i
     }
 
     return 0;
