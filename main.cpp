@@ -594,7 +594,6 @@ int main()
 }
 Create a program to print odd numbers between 1 and n, where n is a positive integer entered by the user.
 
-*/
 
 #include <iostream>
 using namespace std;
@@ -620,5 +619,29 @@ int main()
         }
     }
 
+    return 0;
+}
+
+  Funtion in cpp
+
+*/
+
+#include <iostream>
+using namespace std;
+
+// function declaration:
+
+void DisplayMessage()
+{
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Hello world" << endl;
+    }
+}
+
+int main()
+{
+    DisplayMessage();
     return 0;
 }
