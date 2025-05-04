@@ -624,7 +624,7 @@ int main()
 
   Funtion in cpp
 
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -643,5 +643,30 @@ void DisplayMessage()
 int main()
 {
     DisplayMessage();
+    return 0;
+}
+
+*/
+
+// two terms are commly used in c++
+// 1. formal parameter
+
+#include <iostream>
+using namespace std;
+
+void Subtract(int a, int b)
+{
+
+    cout << a - b;
+}
+
+int main()
+{
+
+    int a = 12;
+    int b = 32;
+
+    Subtract(a, b);
+
     return 0;
 }
