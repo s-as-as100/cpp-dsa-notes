@@ -646,7 +646,7 @@ int main()
     return 0;
 }
 
-*/
+
 
 // two terms are commly used in c++
 // 1. formal parameter
@@ -668,5 +668,28 @@ int main()
 
     Subtract(a, b);
 
+    return 0;
+}
+
+// 2. Actual  parameter
+
+
+pass by reference
+*/
+
+#include <iostream>
+using namespace std;
+// Notice we have used '&' this time in the function declaration.
+// By using '&', We are using a reference to the variable a.
+void Address(int &a)
+{
+    cout << "Address of 'a' variable in Address() function: " << &a << endl;
+}
+
+int main()
+{
+    int a = 10;
+    cout << "Address of 'a' variable in main function: " << &a << endl;
+    Address(a);
     return 0;
 }
