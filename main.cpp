@@ -702,7 +702,7 @@ Enter number 1 : 10
 Enter number 2 : 5
 
 
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -718,4 +718,57 @@ int main()
     result = num1 + num2;
 
     return 0;
+}
+
+Write a C++ program to input the radius of the circle from the user and find the diameter,
+ circumference and area of the given circle using functions.Use Pi = 3.14 in calculations.
+
+ Input
+Enter radius : 10
+Output
+Diameter = 20
+Circumference = 62.8
+Area = 314
+
+*/
+
+#include <iostream>
+using namespace std;
+
+double FindDiameter(int radius)
+{
+
+    return 2 * radius;
+}
+
+double FindCircumference(int radius)
+{
+
+    return 2 * 3.14 * radius;
+}
+
+double FindAreaOfCircle(int radius)
+{
+
+    return 3.14 * radius * radius;
+}
+
+int main()
+{
+    double radius, diameter, circumference, area;
+
+    cout << "Enter a radius of the circle";
+    cin >> radius;
+
+    diameter = FindDiameter(radius);
+
+    circumference = FindCircumference(radius);
+
+    area = FindAreaOfCircle(radius);
+
+    cout << "Diameter of a circle " << diameter;
+
+    cout << "Diameter of a circumference " << circumference;
+
+    cout << "Diameter of a area " << area;
 }
