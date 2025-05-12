@@ -675,7 +675,7 @@ int main()
 
 
 pass by reference
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -691,5 +691,31 @@ int main()
     int a = 10;
     cout << "Address of 'a' variable in main function: " << &a << endl;
     Address(a);
+    return 0;
+}
+
+Write a C++ program to input any two numbers(integers) from the user and find the sum of the given numbers using a function.
+
+Input
+Enter number 1 : 10
+
+Enter number 2 : 5
+
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num1, num2, result;
+    cout << "Enter a num 1" << endl;
+    cin >> num1;
+    cout << "Enter a num 2" << endl;
+    cin >> num2;
+
+    result = num1 + num2;
+
     return 0;
 }
