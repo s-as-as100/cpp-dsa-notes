@@ -730,7 +730,6 @@ Diameter = 20
 Circumference = 62.8
 Area = 314
 
-*/
 
 #include <iostream>
 using namespace std;
@@ -771,4 +770,34 @@ int main()
     cout << "Diameter of a circumference " << circumference;
 
     cout << "Diameter of a area " << area;
+}
+
+Create a Array
+
+
+*/
+
+int marks[5];
+char grades[5];
+
+string name[20], address[20];
+
+int arr[5] = {1, 2, 3, 4, 5};
+
+int arr[5] = {1, 2, 3}
+
+// output : {1,2,3,0,0}
+
+for (int i = 0; i < 10; ++i)
+{
+    cin >> arr[i];
+}
+
+// Let's say we want to divide the elements by 2 until they're even,
+// and then print the odd leftover.
+for (int i = 0; i < 10; ++i)
+{
+    while (!(arr[i] % 2))
+        arr[i] /= 2;
+    cout << arr[i] << ' ';
 }
