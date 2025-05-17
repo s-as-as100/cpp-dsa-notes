@@ -775,8 +775,6 @@ int main()
 Create a Array
 
 
-*/
-
 int marks[5];
 char grades[5];
 
@@ -800,4 +798,26 @@ for (int i = 0; i < 10; ++i)
     while (!(arr[i] % 2))
         arr[i] /= 2;
     cout << arr[i] << ' ';
+}
+
+
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[5] = {1, 2, 3, 4, 5};
+    int sum = 0;
+
+    for (int i = 0; i < 5; i++)
+    {
+        sum += arr[i];
+    }
+
+    cout << "Sum of array elements: " << sum << endl;
+
+    return 0;
 }
